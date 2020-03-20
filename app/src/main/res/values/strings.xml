@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Go!Jakarta</string>
+    <string name="id_puskesmas">Id Puskesmas</string>
+    <string name="name_puskesmas">Nama Puskesmas</string>
+    <string name="location_puskesmas">Location Puskesmas</string>
+    <string name="email_puskesmas">Email Puskesmas</string>
 </resources>

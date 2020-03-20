@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_10dp">10dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="size_5dp">5dp</dimen>
+    <dimen name="image_corner_radius">12dp</dimen>
+    <dimen name="badge_padding">8dp</dimen>
+    <dimen name="size_40dp">40dp</dimen>
+    <dimen name="size_12dp">12dp</dimen>
+    <dimen name="size_8dp">8dp</dimen>
+    <dimen name="size_24dp">24dp</dimen>
+    <dimen name="size_140dp">140dp</dimen>
+</resources>

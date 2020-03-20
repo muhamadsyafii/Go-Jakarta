@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#2BAF66</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cream">#FCF7F4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="islandgreen">#2BAF66</color>
+    <color name="whiteSmoke">#f5f5f5</color>
+
+    <color name="colorPrimaryBlack">#141414</color>
+    <color name="colorPrimaryDarkBlack">#000000</color>
+    <color name="colorAccentBlack">#1A1A1A</color>
+
+    <color name="darkStatusBar">#000000</color>
+    <color name="toolbarBlack">#161616</color>
+
+    <color name="bottomNavigation">#1A1A1A</color>
+    <color name="bottomNavigationItem">#656565</color>
+
+    <color name="backgroundBlack">#121212</color>
+    <color name="backgroundWhite">#ffffff</color>
+    <color name="backgroundSoftBlack">#222222</color>
+    <color name="backgroundGrey">#DADADA</color>
+    <color name="backgroundTransparent">#804B4B4B</color>
+
+
 </resources>

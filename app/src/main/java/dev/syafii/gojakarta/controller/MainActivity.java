@@ -1,8 +1,10 @@
-package dev.syafii.gojakarta;
+package dev.syafii.gojakarta.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import dev.syafii.gojakarta.R;
 
 public class MainActivity extends AppCompatActivity {
 
