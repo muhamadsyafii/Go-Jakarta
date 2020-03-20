@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2BAF66</color>
+    <color name="colorPrimary">#118A4B</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#FF0000</color>
     <color name="cream">#FCF7F4</color>
     <color name="white">#FFFFFF</color>
     <color name="islandgreen">#2BAF66</color>
+    <color name="green">#44B34B</color>
     <color name="whiteSmoke">#f5f5f5</color>
 
     <color name="colorPrimaryBlack">#141414</color>
@@ -23,6 +24,7 @@
     <color name="backgroundSoftBlack">#222222</color>
     <color name="backgroundGrey">#DADADA</color>
     <color name="backgroundTransparent">#804B4B4B</color>
+
 
 
 </resources>

@@ -6,4 +6,7 @@ public class Constant {
 
     //message
     public static final String MESSAGE_ERROR_REQUEST = "We're sorry, there is something wrong. Please try again!";
+
+    public static final int REQUEST_TIME_OUT = 60;
+    public static final String KEY_DATA = "key_data";
 }

@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_140dp"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/logo" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
@@ -43,6 +43,7 @@
         android:lines="2"
         android:maxLines="2"
         android:text="@string/name_puskesmas"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryBlack" />
 

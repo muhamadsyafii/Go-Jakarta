@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/gradient_toolbar"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin">
+
+    <ImageView
+        android:id="@+id/mToolbarBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/size_8dp"
+        android:layout_margin="@dimen/size_8dp"
+        android:src="@drawable/ic_arrow_left" />
+
+    <TextView
+        android:id="@+id/mToolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/size_48dp"
+        android:layout_marginRight="@dimen/size_48dp"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="@color/whiteSmoke"
+        android:textSize="@dimen/size_16sp"
+        android:textStyle="bold" />
+
+</androidx.appcompat.widget.Toolbar>

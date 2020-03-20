@@ -23,6 +23,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 ActivityUtils.openActivity(SplashScreenActivity.this, PuskesmasActivity.class);
+                finish();
             }
         }, 1000);
     }

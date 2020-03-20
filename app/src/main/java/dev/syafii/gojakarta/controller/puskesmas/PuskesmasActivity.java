@@ -1,5 +1,6 @@
 package dev.syafii.gojakarta.controller.puskesmas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -11,6 +12,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,8 +21,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import dev.syafii.gojakarta.R;
 import dev.syafii.gojakarta.model.PuskesmasData;
+import dev.syafii.gojakarta.util.CustomProgressBar;
 import dev.syafii.gojakarta.util.CustomToolbar;
+import dev.syafii.gojakarta.util.ItemClickListener;
 import es.dmoral.toasty.Toasty;
+
+import static dev.syafii.gojakarta.util.Constant.KEY_DATA;
 
 public class PuskesmasActivity extends AppCompatActivity implements PuskesmasContract.View {
 
@@ -27,13 +34,12 @@ public class PuskesmasActivity extends AppCompatActivity implements PuskesmasCon
 
     @BindView(R.id.rv_puskesmas)
     RecyclerView rvPuskesmas;
-    @BindView(R.id.progressBar)
-    ProgressBar progressBar;
     @BindView(R.id.srf_puskesmas)
     SwipeRefreshLayout swipeRefresh;
 
     List<PuskesmasData> puskesmasDataList;
     private PuskesmasAdapter puskesmasAdapter;
+    private CustomProgressBar progressBar;
 
 
     @Override
@@ -41,6 +47,7 @@ public class PuskesmasActivity extends AppCompatActivity implements PuskesmasCon
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puskesmas);
         ButterKnife.bind(this);
+        progressBar = new CustomProgressBar(this);
         CustomToolbar.setupToolbar(this, "Puskesmas");
 
         presenter = new PuskesmasPresenter(this, new PuskesmasModel());
@@ -62,17 +69,26 @@ public class PuskesmasActivity extends AppCompatActivity implements PuskesmasCon
             swipeRefresh.setRefreshing(false);
         });
 
+        puskesmasAdapter.setItemClickListener(new ItemClickListener<PuskesmasData>() {
+            @Override
+            public void onItemClick(PuskesmasData data) {
+                Intent intent = new Intent(PuskesmasActivity.this, PuskesmasDetailActivity.class);
+                intent.putExtra(KEY_DATA, new Gson().toJson(data));
+                startActivity(intent);
+            }
+        });
+
         presenter.getPuskesmasList();
     }
 
     @Override
     public void showLoading() {
-        progressBar.setVisibility(View.VISIBLE);
+        progressBar.show();
     }
 
     @Override
     public void hideLoading() {
-        progressBar.setVisibility(View.GONE);
+        progressBar.hide();
     }
 
     @Override

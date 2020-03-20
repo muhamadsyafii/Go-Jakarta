@@ -3,5 +3,8 @@
     <string name="id_puskesmas">Id Puskesmas</string>
     <string name="name_puskesmas">Nama Puskesmas</string>
     <string name="location_puskesmas">Location Puskesmas</string>
-    <string name="email_puskesmas">Email Puskesmas</string>
+    <string name="email_puskesmas">Email \n Puskesmas</string>
+    <string name="call_puskesmas">Panggil \n Puskesmas</string>
+    <string name="direction_puskesmas">Maps \n Puskesmas</string>
+    <string name="fax">Fax Puskesmas</string>
 </resources>
