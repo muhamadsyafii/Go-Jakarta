@@ -12,13 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".controller.puskesmas.PuskesmasDetailActivity"/>
+        <activity android:name=".controller.pospemadam.PosPemadamDetailActivity"></activity>
+        <activity android:name=".controller.pospemadam.PosPemadamActivity"></activity>
+        <activity android:name=".controller.puskesmas.PuskesmasDetailActivity" />
         <activity android:name=".controller.puskesmas.PuskesmasActivity" />
         <activity android:name=".controller.MainActivity" />
-        <activity android:name=".controller.splashscreen.SplashScreenActivity"
+        <activity
+            android:name=".controller.splashscreen.SplashScreenActivity"
             android:theme="@style/SplashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

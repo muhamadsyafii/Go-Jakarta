@@ -62,7 +62,7 @@ public class PuskesmasAdapter extends RecyclerView.Adapter<PuskesmasAdapter.View
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
-            itemView.setOnClickListener((View.OnClickListener) this);
+            itemView.setOnClickListener(this);
         }
 
         @Override

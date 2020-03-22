@@ -13,6 +13,7 @@ public interface ApiService {
     @GET("puskesmas")
     Call<PuskesmasResponse> getPuskesmas(@Header("Authorization") String authToken);
 
+    @Headers("Content-Type:application/json")
     @GET("emergency/pospemadam/")
     Call<PosPemadamResponse> getPosPemadam(@Header("Authorization") String authToken);
 

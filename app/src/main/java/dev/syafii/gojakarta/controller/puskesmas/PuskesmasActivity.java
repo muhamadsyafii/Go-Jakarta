@@ -68,13 +68,10 @@ public class PuskesmasActivity extends AppCompatActivity implements PuskesmasCon
             swipeRefresh.setRefreshing(false);
         });
 
-        puskesmasAdapter.setItemClickListener(new ItemClickListener<PuskesmasData>() {
-            @Override
-            public void onItemClick(PuskesmasData data) {
-                Intent intent = new Intent(PuskesmasActivity.this, PuskesmasDetailActivity.class);
-                intent.putExtra(KEY_DATA, new Gson().toJson(data));
-                startActivity(intent);
-            }
+        puskesmasAdapter.setItemClickListener(data -> {
+            Intent intent = new Intent(PuskesmasActivity.this, PuskesmasDetailActivity.class);
+            intent.putExtra(KEY_DATA, new Gson().toJson(data));
+            startActivity(intent);
         });
 
         presenter.getPuskesmasList();
@@ -87,6 +84,7 @@ public class PuskesmasActivity extends AppCompatActivity implements PuskesmasCon
 
     @Override
     public void hideLoading() {
+        if (swipeRefresh !=null) swipeRefresh.setRefreshing(false);
         progressBar.hide();
     }
 

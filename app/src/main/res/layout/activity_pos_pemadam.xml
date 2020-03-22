@@ -18,7 +18,7 @@
         layout="@layout/custom_toolbar" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/srf_puskesmas"
+        android:id="@+id/srf_posPemadam"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"
@@ -27,18 +27,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/size_24dp"
-            android:paddingRight="@dimen/size_24dp">
+            android:orientation="vertical">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_puskesmas"
+                android:id="@+id/rv_posPemadam"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                app:spanCount="2"
-                tools:itemCount="2"
-                tools:listitem="@layout/item_puskesmas"/>
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="11"
+                tools:listitem="@layout/item_pospemadam"/>
         </LinearLayout>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

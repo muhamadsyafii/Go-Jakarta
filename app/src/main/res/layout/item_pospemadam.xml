@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Muhamad Syafii
+  ~ Copyright (c) 2020.
+  ~ All Rights Reserved
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/size_2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded_cream"
+        android:padding="@dimen/size_8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_marginEnd="@dimen/size_16dp"
+            android:src="@drawable/logo_pemadam"
+            tools:src="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_posPemadam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/img_item_photo">
+
+            <TextView
+                android:id="@+id/tv_namePosPemadam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_16sp"
+                android:textStyle="bold"
+                tools:text="@string/name_pos_pemadam" />
+
+            <TextView
+                android:id="@+id/tv_almatPosPemadam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_6dp"
+                android:textSize="@dimen/size_10sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/address_pos_pemadam"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/size_8dp"
+            android:src="@drawable/ic_arrow_right_black" />
+    </RelativeLayout>
+</RelativeLayout>

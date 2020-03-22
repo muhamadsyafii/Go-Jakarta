@@ -9,6 +9,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import dev.syafii.gojakarta.R;
+import dev.syafii.gojakarta.controller.MainActivity;
 import dev.syafii.gojakarta.controller.puskesmas.PuskesmasActivity;
 import dev.syafii.gojakarta.util.ActivityUtils;
 
@@ -22,7 +23,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                ActivityUtils.openActivity(SplashScreenActivity.this, PuskesmasActivity.class);
+                ActivityUtils.openActivity(SplashScreenActivity.this, MainActivity.class);
                 finish();
             }
         }, 1000);
