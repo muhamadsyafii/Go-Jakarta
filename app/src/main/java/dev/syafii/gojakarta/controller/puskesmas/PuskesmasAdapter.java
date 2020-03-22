@@ -14,7 +14,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import dev.syafii.gojakarta.R;
-import dev.syafii.gojakarta.model.PuskesmasData;
+import dev.syafii.gojakarta.model.puskesmas.PuskesmasData;
 import dev.syafii.gojakarta.util.ItemClickListener;
 
 public class PuskesmasAdapter extends RecyclerView.Adapter<PuskesmasAdapter.ViewHolder> {

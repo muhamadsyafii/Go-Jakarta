@@ -11,13 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
 
-import java.util.Locale;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import dev.syafii.gojakarta.R;
-import dev.syafii.gojakarta.model.PuskesmasData;
+import dev.syafii.gojakarta.model.puskesmas.PuskesmasData;
 import dev.syafii.gojakarta.util.ActivityUtils;
 import dev.syafii.gojakarta.util.CustomToolbar;
 import es.dmoral.toasty.Toasty;
@@ -39,6 +37,8 @@ public class PuskesmasDetailActivity extends AppCompatActivity {
     TextView tvFax;
     @BindView(R.id.tv_headPuskesmas)
     TextView tvHead;
+    @BindView(R.id.tv_namePuskesmas)
+    TextView tvName;
 
     private PuskesmasData puskesmasData;
 
@@ -58,6 +58,7 @@ public class PuskesmasDetailActivity extends AppCompatActivity {
 
 
         if (puskesmasData != null) {
+
             String fax = String.valueOf(puskesmasData.getFaximile());
             char[] chars = fax.toCharArray();
             StringBuilder stringBuilder = new StringBuilder("(021) ");
@@ -65,6 +66,7 @@ public class PuskesmasDetailActivity extends AppCompatActivity {
             tvAddress.setText(puskesmasData.getLocation().getAlamat());
             tvFax.setText(stringBuilder);
             tvHead.setText(puskesmasData.getKepalaPuskesmas());
+            tvName.setText(puskesmasData.getNamaPuskesmas());
         }
     }
 

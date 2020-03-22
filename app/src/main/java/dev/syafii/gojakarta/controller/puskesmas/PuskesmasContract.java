@@ -5,7 +5,7 @@ import java.util.List;
 import dev.syafii.gojakarta.base.BaseModel;
 import dev.syafii.gojakarta.base.BasePresenter;
 import dev.syafii.gojakarta.base.BaseView;
-import dev.syafii.gojakarta.model.PuskesmasData;
+import dev.syafii.gojakarta.model.puskesmas.PuskesmasData;
 
 public interface PuskesmasContract {
     interface View extends BaseView<Presenter> {

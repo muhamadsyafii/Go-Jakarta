@@ -3,7 +3,7 @@ package dev.syafii.gojakarta.controller.puskesmas;
 import java.util.List;
 
 import dev.syafii.gojakarta.base.BaseModel;
-import dev.syafii.gojakarta.model.PuskesmasData;
+import dev.syafii.gojakarta.model.puskesmas.PuskesmasData;
 
 public class PuskesmasPresenter implements PuskesmasContract.Presenter {
 

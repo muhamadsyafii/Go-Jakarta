@@ -1,4 +1,4 @@
-package dev.syafii.gojakarta.model;
+package dev.syafii.gojakarta.model.puskesmas;
 
 import com.google.gson.annotations.SerializedName;
 

@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/size_48dp"
     tools:context=".controller.splashscreen.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/size_140dp"
+        android:layout_height="@dimen/size_140dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/size_24dp"
+        android:layout_marginTop="@dimen/size_140dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logojakarta" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:fontFamily="@font/brushed"
         android:gravity="center"
-        android:text="SplashScreen" />
+        android:text="@string/app_name"
+        android:textColor="@color/whiteSmoke"
+        android:textSize="@dimen/size_50sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -6,8 +6,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-import dev.syafii.gojakarta.model.PuskesmasData;
-import dev.syafii.gojakarta.model.PuskesmasResponse;
+import dev.syafii.gojakarta.model.puskesmas.PuskesmasData;
+import dev.syafii.gojakarta.model.puskesmas.PuskesmasResponse;
 import dev.syafii.gojakarta.network.ApiService;
 import dev.syafii.gojakarta.network.RetrofitInstance;
 import retrofit2.Call;

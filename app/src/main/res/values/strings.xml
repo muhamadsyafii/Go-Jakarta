@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Go!Jakarta</string>
-    <string name="id_puskesmas">Id Puskesmas</string>
-    <string name="name_puskesmas">Nama Puskesmas</string>
-    <string name="location_puskesmas">Location Puskesmas</string>
+    <string name="app_name">Go! Jakarta</string>
+    <string name="name_puskesmas">NAMA PUSKESMAS</string>
+    <string name="address_puskesmas">ALAMAT PUSKESMAS</string>
+    <string name="head_puskesmas">KEPALA PUSKESMAS</string>
     <string name="email_puskesmas">Email \n Puskesmas</string>
     <string name="call_puskesmas">Panggil \n Puskesmas</string>
     <string name="direction_puskesmas">Maps \n Puskesmas</string>
-    <string name="fax">Fax Puskesmas</string>
+    <string name="fax">FAX PUSKESMAS</string>
 </resources>

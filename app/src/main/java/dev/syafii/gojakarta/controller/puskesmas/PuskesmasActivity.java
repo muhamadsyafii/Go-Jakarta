@@ -2,13 +2,12 @@ package dev.syafii.gojakarta.controller.puskesmas;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -20,7 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import dev.syafii.gojakarta.R;
-import dev.syafii.gojakarta.model.PuskesmasData;
+import dev.syafii.gojakarta.model.puskesmas.PuskesmasData;
 import dev.syafii.gojakarta.util.CustomProgressBar;
 import dev.syafii.gojakarta.util.CustomToolbar;
 import dev.syafii.gojakarta.util.ItemClickListener;
